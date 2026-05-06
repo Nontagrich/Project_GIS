@@ -1,0 +1,28 @@
+ HOW TO INITIALIZE 
+ 1. คัดลอกโฟลเดอร์โปรเจกต์ทั งหมด  ( ไม่ต้องก๊อปปี โฟลเดอร์  venv_autogluon เดิมไป  เพราะเราจะ  
+ สร้างใหม่ให้เหมาะกับสภาพแวดล้อมของเครื องนั นๆ ) 
+ 2. ให้เปิด  Terminal หรือ  Command Prompt ( บน  Windows) แล้ว  cd ไปที โฟลเดอร์ของโปรเจกต์  
+ จากนั นรันคําสั งตามลําดับต่อไปนี  : 
+ สร้าง  Virtual Environment ใหม่ : เพื อป้องกันไม่ให้แพ็กเกจตีกันกับโปรเจกต์อื นในเครื อง  แนะนําให้ 
+ 
+ สร้างสภาพแวดล้อมจําลอง  (Virtual Environment) ใหม่ด้วยคําสัง : 
+   python  -m  venv  venv_autogluon  
+ Activate ENV ด้วย  (CMD) 
+
+  .\venv_autogluon\Scripts\activate 
+
+ ลง  LIB ตาม  requirements.txt 
+  pip install -r requirements.txt 
+
+ รัน  Backend 
+ .\venv_autogluon\Scripts\python.exe backend/main.py 
+
+ รัน  Frontend 
+ npm run dev 
+
+**********************************************
+แก้ Directory 
+
+ในไฟล์ main.py ใน backend ให้ตรงกับเครื่องที่เอาไปใช้
+- ในส่วนของการดึง MODEL_PATH
+- tiff_path
